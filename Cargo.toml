@@ -11,6 +11,10 @@ path = "src/bin/up01/up01-1.rs"
 name = "up01-2"
 path = "src/bin/up01/up01-2.rs"
 
+[[bin]]
+name = "up01-3"
+path = "src/bin/up01/up01-3.rs"
+
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
