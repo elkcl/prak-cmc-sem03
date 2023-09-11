@@ -6,7 +6,6 @@ fn putchar(h: &mut impl Write, c: u8) {
     h.write(&buf).expect("Output error");
 }
 
-
 fn divmod(c: i32, mut a: i32, n: i32) -> i32 {
     let mut p = n - 2;
     let mut res = 1;
@@ -26,7 +25,7 @@ fn main() {
     let mut n = String::new();
     io::stdin().read_line(&mut n).expect("Input error");
     let n: i32 = n.trim().parse().expect("Input format error");
-    
+
     let mut stdout = io::stdout().lock();
     for c in 0..n {
         for a in 1..n {

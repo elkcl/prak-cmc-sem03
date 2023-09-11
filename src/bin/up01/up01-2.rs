@@ -1,4 +1,4 @@
-use std::{io};
+use std::io;
 use std::io::{Read, Write};
 
 const XOR_MASK: i32 = 1 << 3;
