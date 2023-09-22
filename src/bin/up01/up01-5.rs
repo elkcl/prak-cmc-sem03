@@ -10,8 +10,7 @@ fn print_permutations(
     c: usize,
     curr: &mut [u8],
     used: &mut [bool],
-) -> Result<(), io::Error>
-{
+) -> Result<(), io::Error> {
     if c >= n {
         io::stdout().lock().write(&curr[..n])?;
         println!();
@@ -29,8 +28,7 @@ fn print_permutations(
     Ok(())
 }
 
-fn try_main() -> Result<(), Box<dyn Error>>
-{
+fn try_main() -> Result<(), Box<dyn Error>> {
     let mut n = String::new();
     io::stdin().lock().read_line(&mut n)?;
     let n: usize = n.trim().parse()?;
@@ -43,8 +41,7 @@ fn try_main() -> Result<(), Box<dyn Error>>
     Ok(())
 }
 
-fn main() -> ExitCode
-{
+fn main() -> ExitCode {
     match try_main() {
         Ok(_) => ExitCode::SUCCESS,
         Err(e) => {
